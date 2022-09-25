@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+
+body {
+  margin: auto;
+  padding: 0;
+  height: 100vh;
+  background-color: rgb(219, 219, 219);
+  max-width: 1080px;
+  width: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.font-carter {
+  font-family: "Carter One", cursive;
+  font-weight: normal;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  max-width: 1080px;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 0 5px;
+}
+
+#top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(238, 22, 32);
+}
+
+#top-bar h1 {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  color: black;
+}
+
+#top-bar a {
+  text-decoration: none;
+}
+
+#top-nav {
+  display: none;
+  flex-direction: column;
+}
+
+#top-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 20px;
+  padding: 10px 0px;
+  background-color: rgba(255, 244, 244, 0.9);
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  box-shadow: 0 0 1px;
+}
+
+#top-nav-desktop {
+  display: none;
+}
+
+#top-nav-desktop a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#logo {
+  width: 70px;
+  height: 55px;
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-image: url("../img/china-flag.png");
+}
+
+#hamburger-menu {
+  width: 40px;
+  padding: 10px;
+}
+
+#main {
+  margin: 85px 20px;
+  padding: 20px;
+  background-color: rgba(163, 163, 163, 0.5);
+  border-radius: 15px;
+  box-shadow: 0 0 5px;
+}
+
+#main-text img {
+  max-height: 582px;
+  max-width: 90%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 5px;
+}
+
+#main p {
+  width: 90%;
+}
+
+#main-contact {
+  margin: auto;
+  margin-top: 85px;
+  max-width: 300px;
+  width: 80%;
+  padding: 20px;
+  background-color: rgba(163, 163, 163, 0.5);
+  border-radius: 15px;
+  box-shadow: 0 0 5px;
+}
+
+#main-contact button {
+  border-radius: 5px;
+}
+
+#top-header {
+  margin-top: 0;
+}
+
+#bottom-box {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.place-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.place-box img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 5px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 244, 244, 0.7);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.place-box:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: black;
+  font-size: 1.2rem;
+}
+
+#contact-form {
+  margin-right: 10px;
+}
+
+#contact-form h3 {
+  margin-top: 0.3em;
+}
+
+#contact-form label {
+  font-size: 0.8em;
+}
+
+fieldset {
+  margin: auto;
+  max-width: 415px;
+  width: 95%;
+  border-radius: 15px;
+}
+
+#contact-form input {
+  max-width: 200px;
+  width: 95%;
+  padding: 5px;
+  margin: 3px 0;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+#message-box {
+  max-width: 400px;
+}
+
+#contact-form textarea {
+  width: 95%;
+  padding: 5px;
+  margin: 0;
+  margin-top: 3px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 5px;
+  height: 150px;
+  resize: vertical;
+}
+
+#contact-form #gender {
+  margin-bottom: 10px;
+}
+
+#contact-form input[type="radio"] {
+  width: auto;
+}
+
+#contact-form input[type="radio"]:last-of-type {
+  margin-left: 5px;
+}
+
+input:focus {
+  box-shadow: 0 0 0 1px blue;
+}
+
+#message:focus {
+  box-shadow: 0 0 0 1px blue;
+}
+
+#remaining-chars {
+  width: 95%;
+  text-align: right;
+  font-size: 0.6rem;
+}
+
+#admin-fieldset {
+  display: none;
+  margin-top: 10px;
+  margin-right: 10px;
+  max-width: 90%;
+}
+
+#admin-fieldset p {
+  width: 100%;
+}
+
+#admin {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+#admin input {
+  max-width: 170px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.spacer {
+  width: 100%;
+  height: 1px;
+}
+
+#footer nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(255, 244, 244, 0.9);
+  position: fixed;
+  bottom: 0;
+}
+
+#footer nav a {
+  width: 100%;
+  height: 20px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+@media only screen and (min-width: 376px) {
+  #top-bar h1 {
+    font-size: 1.5em;
+  }
+
+  #bottom-box {
+    flex-direction: row;
+  }
+
+  #contact-form textarea {
+    resize: both;
+  }
+
+  #top-header {
+    font-size: 1.5em;
+  }
+
+  #bottom-header {
+    font-size: 1.2em;
+  }
+
+  #main-contact {
+    max-width: 550px;
+  }
+
+  #main-contact button {
+    font-size: 1.1em;
+  }
+
+  #main-contact fieldset {
+    max-width: 515px;
+  }
+
+  #main-contact h3 {
+    font-size: 1.4em;
+  }
+
+  #contact-form label {
+    font-size: 1em;
+  }
+
+  #message-box {
+    max-width: 500px;
+  }
+
+  #remaining-chars {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 821px) {
+  #top-bar {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #top-nav-desktop {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    margin-left: 10px;
+  }
+
+  #top-nav-desktop a {
+    padding: 10px;
+  }
+
+  #top-nav-desktop a:hover {
+    background-color: rgba(255, 244, 244, 0.9);
+    border-radius: 5px;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+  #top-header {
+    font-size: 1.8em;
+  }
+
+  #bottom-header {
+    font-size: 1.5em;
+  }
+
+  #main-contact {
+    max-width: 750px;
+  }
+
+  #main-contact button {
+    font-size: 1.2em;
+  }
+
+  #main-contact fieldset {
+    max-width: 715px;
+  }
+
+  #main-contact h3 {
+    font-size: 1.5em;
+  }
+
+  #message-box {
+    max-width: 700px;
+  }
+
+  #remaining-chars {
+    font-size: 1rem;
+  }
+}

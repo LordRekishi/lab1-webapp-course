@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destination China</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body onload="setupPage()">
+    <header>
+      <div id="top-bar">
+        <a href="#"><div id="logo"></div></a>
+        <a href="#"><h1 class="font-carter">Destination China</h1></a>
+
+        <nav id="top-nav-desktop">
+          <a href="./city.html">City</a>
+          <a href="./mountain.html">Mountain</a>
+          <a href="./island.html">Island</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+
+        <a href="javascript:void(0);" onclick="openMenu()">
+          <img
+            id="hamburger-menu"
+            src="./img/hamburger-menu.svg"
+            alt="hamburger menu"
+          />
+        </a>
+      </div>
+
+      <nav id="top-nav">
+        <a href="#">Home</a>
+        <a href="./city.html">City</a>
+        <a href="./mountain.html">Mountain</a>
+        <a href="./island.html">Island</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="center-box" class="center">
+        <h3 id="top-header" class="font-carter">Welcome to China</h3>
+        <article id="main-text" class="center">
+          <img
+            src="./img/wall.webp"
+            alt="great wall of china with watch tower"
+          />
+          <p id="p1"></p>
+          <p id="p2"></p>
+        </article>
+      </section>
+
+      <h4 id="bottom-header" class="font-carter center">
+        Major tourist attractions
+      </h4>
+
+      <section id="bottom-box" class="center">
+        <article class="place-box">
+          <img src="./img/shanghai.jpeg" alt="Shanghai city skyline" />
+          <a href="./city.html">
+            <div class="overlay">
+              <div class="text">Shanghai</div>
+            </div>
+          </a>
+        </article>
+        <article class="place-box">
+          <img src="./img/forbidden-city.jpg" alt="Forbidden City, Beijing" />
+          <a href="./city.html">
+            <div class="overlay">
+              <div class="text">Forbidden City</div>
+            </div>
+          </a>
+        </article>
+        <article class="place-box">
+          <img src="./img/huangshan.jpg" alt="Huangshan Mountains" />
+          <a href="./mountain.html">
+            <div class="overlay">
+              <div class="text">Huangshan Mountains</div>
+            </div>
+          </a>
+        </article>
+        <article class="place-box">
+          <img src="./img/yalong-sanya.jpg" alt="Yalong Bay, Sanya" />
+          <a href="./island.html">
+            <div class="overlay">
+              <div class="text">Yalong Bay</div>
+            </div>
+          </a>
+        </article>
+      </section>
+    </main>
+
+    <div class="spacer"></div>
+
+    <footer id="footer">
+      <nav id="bottom-nav">
+        <a href="#">Home</a>
+        <a href="./contact.html">Contact Us</a>
+      </nav>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

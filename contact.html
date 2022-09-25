@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div id="top-bar">
+        <a href="index.html"><div id="logo"></div></a>
+        <a href="index.html"><h1 class="font-carter">Destination China</h1></a>
+
+        <nav id="top-nav-desktop">
+          <a href="./city.html">City</a>
+          <a href="./mountain.html">Mountain</a>
+          <a href="./island.html">Island</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+
+        <a href="javascript:void(0);" onclick="openMenu()">
+          <img
+            id="hamburger-menu"
+            src="./img/hamburger-menu.svg"
+            alt="hamburger menu"
+          />
+        </a>
+      </div>
+
+      <nav id="top-nav">
+        <a href="index.html">Home</a>
+        <a href="./city.html">City</a>
+        <a href="./mountain.html">Mountain</a>
+        <a href="./island.html">Island</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main-contact">
+      <form id="contact-form">
+        <fieldset>
+          <h3 class="font-carter">Contact Us</h3>
+
+          <div id="gender">
+            <input type="radio" id="mr" name="gender" value="Mr." required />
+            <label for="mr">Mr.</label>
+            <input
+              type="radio"
+              id="miss"
+              name="gender"
+              value="Miss."
+              required
+            />
+            <label for="miss">Miss.</label>
+          </div>
+
+          <label for="name">Name</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name..."
+            required
+          /><br />
+
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email..."
+            required
+          /><br />
+          <label for="message">Message</label><br />
+          <div id="message-box">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write a message..."
+              required
+              maxlength="250"
+            ></textarea>
+            <div id="remaining-chars">250 characters remaining</div>
+          </div>
+          <button type="submit">Send</button>
+        </fieldset>
+      </form>
+
+      <fieldset id="admin-fieldset">
+        <legend>Admin</legend>
+        <form id="admin">
+          <label for="retrieve">Retrieve:</label>
+          <input
+            type="text"
+            id="retrieve"
+            placeholder="Name to retrieve..."
+            required
+          />
+          <button onclick="retrieveJson(event)">Retrieve</button>
+          <button onclick="hideAdmin(event)">Hide Admin</button>
+        </form>
+        <p id="output"></p>
+        <p id="output2"></p>
+        <p id="output3"></p>
+      </fieldset>
+    </main>
+
+    <div class="spacer"></div>
+
+    <footer id="footer">
+      <nav id="bottom-nav">
+        <a href="index.html">Home</a>
+        <a href="./contact.html">Contact Us</a>
+      </nav>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
